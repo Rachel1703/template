@@ -1,0 +1,89 @@
+<html>
+<head>
+<style>
+
+
+.left{
+		background-color:#B3FCC9;
+		width:40%;
+		height:50%;
+		float:left;
+		background-image: linear-gradient(pink, white);
+	}
+		
+	.right{
+		background-color:#B3FCC9;
+		width:40%;
+		height:50%;
+		float:left;
+		margin-left:20px;
+		
+		background-image: linear-gradient(skyblue, white);
+	}
+
+body{
+	padding:0;
+	margin:0;
+	}
+.menu{
+	background-color:grey;
+	width:100%;
+	}
+	
+	.menu > ul{
+	margin-right:20px;
+	}
+	
+	.menu > ul > li {
+	display:inline;
+	list-style:none;
+	background-color: skyblue;
+	margin-right:20px;
+	}
+	
+
+@media only screen and (max-width: 600px) {
+  .menu > ul > li{
+  display: block;
+
+  }
+}
+	
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+  
+   .right{
+ width: 100%;
+ margin-left:0;
+ background-color:purple;
+  }
+  
+  .left{
+ width: 100%;
+  background-color:pink;
+  }
+}		
+</style>
+</head>
+<body>
+<div class="menu">
+<ul>
+<li>Home</li>
+<li>Log In</li>
+<li>About Us</li>
+<li>Service</li>
+<li>Contact Us</li>
+</ul>
+</div>
+<div class="left">
+Left Div
+</div>
+
+<div class="right" >
+<p style="text-shadow: 3px 3px 4px white;">right Div</p>
+</div>
+
+</body>
+</html>
